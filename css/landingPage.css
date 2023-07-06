@@ -1,0 +1,171 @@
+
+
+
+.landing-page 
+{
+  height: 150vh;
+  background-image: url("/images/running-3.jpg");
+  background-size:cover;
+  
+}
+
+.landing-page .overlay
+{
+  background-color: rgba(11, 11, 11, 0.61); 
+  position: absolute;
+  width: 100%;
+  height: 150vh;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  
+}
+
+.landing-page .header-area  
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+font-size: 1.2vw;
+z-index: 2;
+
+}
+.landing-page .header-area .logo 
+{
+  color: var(--skin-color);
+  width: 300px;
+  padding: 15px;
+  z-index: 2;
+ 
+}
+
+ .landing-page .header-area ul
+{
+display: flex;
+flex-direction: row; 
+justify-content: space-between;
+list-style: none;
+z-index: 2;
+padding: 15px;
+}
+
+
+.landing-page .header-area li a
+{
+ text-decoration: none;
+  padding: 10px;  
+  color: #FFF;  
+  cursor: pointer;
+}
+
+.landing-page .header-area li a:hover,
+.landing-page .header-area li a.active
+{
+color: var(--skin-color);
+
+}
+
+.landing-page .introduction-text
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px ;
+ 
+}
+
+.landing-page .introduction-text h1,
+.landing-page .introduction-text h3
+{
+  font-size: 2.2vw;
+  width: 50%;
+  flex: 0 0 50%;
+  color: var(--skin-color);
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, 50%);
+  text-align: center;
+  z-index: 4;
+  font-weight: 700;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+.landing-page .introduction-text p
+{
+  width: 50%;
+  flex: 0 0 50%;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, 0%);
+  z-index: 4;
+  font-size: 1.3vw;
+  font-weight: 700;
+  line-height: 1.8;
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+  transform: translate(0%, 10%);
+  padding-top: 30px;
+}
+
+.landing-page button 
+{
+ width: 15vw;
+ padding: 1vw;
+ background-color: var(--skin-color);
+ border-radius: 30px ;
+ margin-top: 8vw;
+ 
+ text-align: center;
+ cursor: pointer;
+ transition: all 0.5s ease;
+ z-index: 2;
+ font-size: 1.6vw;
+
+ 
+}
+
+.landing-page button:hover
+{
+
+background-color: rgb(222, 221, 221);
+  transform: scale(1.1); 
+}
+
+
+
+@media (max-width:799px)
+{
+  .landing-page,
+   .landing-page .overlay
+  {
+    height: 98vh;
+  }
+    
+  }
+  
+  .landing-page .introduction-text 
+  {
+    padding-top: 100px;
+  }
+  @media (max-width:462px)
+  {
+   
+    .landing-page .introduction-text
+    {
+      padding-top: 130px;
+    }
+   
+    .landing-page .introduction-text p
+    {
+      line-height: 2.5;
+    }
+
+    .landing-page button 
+    {
+      margin-bottom: 100vw;
+    }
+  }
+

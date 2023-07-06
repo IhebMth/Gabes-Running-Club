@@ -1,0 +1,307 @@
+.register 
+{
+  height: 70vh; 
+  
+}
+
+body
+{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+.register .header-area  
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+font-size: 1.2vw;
+z-index: 2;
+
+}
+.register .header-area .logo 
+{
+  color: var(--skin-color);
+  width: 300px;
+  padding: 15px;
+  z-index: 2;
+ 
+}
+
+ .register .header-area ul
+{
+display: flex;
+flex-direction: row; 
+justify-content: space-between;
+list-style: none;
+z-index: 2;
+padding: 15px;
+}
+
+
+.register .header-area li a
+{
+ text-decoration: none;
+  padding: 10px;  
+  color: #FFF;  
+  cursor: pointer;
+}
+
+.register .header-area li a:hover,
+.register .header-area li a.active
+{
+color: var(--skin-color);
+
+}
+
+/* .register .overlay
+{
+  background-color: rgba(11, 11, 11, 0.61); 
+  position: absolute;
+  width: 100%;
+  height: 150vh;
+  left: 0;
+  top: 0;
+  z-index: 1;
+} */
+
+.register-page
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    padding: 10px;
+    border: 1px solid rgb(188, 187, 187);
+    margin: 50px;
+    box-shadow: 0px 3px 15px rgb(132, 161, 132);
+
+}
+
+.register-page .img-box
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 50%;
+    max-width: 50%;
+    background-color: #6154EA;
+    height: auto;
+    border-radius: 30px;
+}
+ img
+{
+    position: relative;
+   
+    
+    width: 20vw;
+   
+}
+
+
+.register-box
+{
+    flex: 0 0 48%;
+    max-width: 48%;
+    padding: 10px;
+    position: relative;
+    border-radius: 20px;
+    height:auto;
+}
+
+
+.register-box h3
+{
+position: relative;
+text-align: center;
+font-size: 1.2vw;
+
+}
+
+.register-box .register> a
+{ 
+    text-decoration: none;
+    color: #6154EA;
+}
+
+.register-box h1
+{
+text-align: center;
+font-size: 2.8vw;
+padding-top: 80px;
+}
+
+.register-box h3
+{
+    text-align: center;
+    font-size: 1.6vw;
+    
+}
+
+.register-box .input
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+    align-items: center;
+   
+}
+
+.username, 
+.password,
+.repeatPass,
+.email
+
+{
+    display: flex;
+    position: relative;
+    width: 20vw;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #FFF;
+    border: none;
+    font-size: 1.2vw;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 #6154EA, 0 6px 20px 0 rgba(107, 230, 105, 0.19);
+
+}
+
+.username > i,
+.password > i,
+.repeatPass > i,
+.email > i
+{
+    font-size: 1vw;
+    margin: 0;
+    border-top: 0;
+    border-right: 1px ;
+    border-bottom: 0px;
+    border-left: 0;
+    border-color: #6154EA;
+    border-style: solid;
+    padding: 1vw;
+
+}
+
+#username, #password, #repeatPass, #email
+{
+   position: relative;
+    padding: 1vw;
+   text-decoration: none;
+    border: none;   
+    text-decoration: blanchedalmond;
+     font-size: 1.2vw;
+    text-align: center;
+}
+
+#username:focus, #password:focus,
+#repeatPass:focus, #email:focus
+{
+      outline: none;
+    
+}
+
+.signUp
+{
+    width: 20vw;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #6154EA;
+    border: none;
+    font-size: 1.2vw;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 700 ;
+    transition: 0.3s all ease;
+}
+
+.signUp:hover
+{
+    transform: scale(1.1);
+}
+  .forgotPass
+ {
+   text-align: center;
+    
+    font-size: 1vw;
+ }
+
+.register-box .icons 
+{
+    padding-top: 30px;
+
+}
+
+.register-box .connect
+{
+   
+    margin-top: 30px;
+    position:relative;
+    font-size: 1.8vw;
+    text-align: center;
+   
+}
+
+.register-box .connect .line-one,
+.register-box .connect .line-two
+ {
+  
+    height: 2.2px;
+    width: 100%;
+    background-color: rgb(108, 108, 108);
+ }
+ 
+.register-box .icons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-box .icons i
+{
+    padding: 15px;
+    font-size: 2vw;
+    color: #6154EA ;
+}
+
+@media(max-width:600px )
+{
+
+    .register-page
+    {
+        margin-top: 100px;
+    }
+}
+
+@media(max-width:400px )
+{
+    .register-page
+    {
+        padding-top: 50px;
+    }
+   .register-page .img-box
+    {
+        display: none;
+    }
+    
+    
+ .username, 
+.password,
+.repeatPass,
+.email,
+.signUp
+{
+width: 35vw;
+
+}
+
+
+}
